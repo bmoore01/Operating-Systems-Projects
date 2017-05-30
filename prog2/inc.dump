@@ -1,0 +1,16 @@
+
+inc:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <inc>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	89 7d fc             	mov    %edi,-0x4(%rbp)
+   7:	83 45 fc 01          	addl   $0x1,-0x4(%rbp)
+   b:	8b 45 fc             	mov    -0x4(%rbp),%eax
+   e:	8d 50 01             	lea    0x1(%rax),%edx
+  11:	89 55 fc             	mov    %edx,-0x4(%rbp)
+  14:	5d                   	pop    %rbp
+  15:	c3                   	retq   
